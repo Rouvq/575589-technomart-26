@@ -10,7 +10,7 @@
         <div>
         <a href="#"><img src="img/icons/logo-technomart.svg" width="110" height="18" alt="Логотип Техномарт"></a><!--Не понял как снять размеры у лого-->
         <form action="#" method="get">
-          <input type="search" value="Поиск">
+          <input type="search" name="q" placeholder="Поиск">
         </form>
         <ul>
           <li><a href="#">Закладки:0</a></li>
@@ -281,11 +281,11 @@
     </div>
     <form action="" method="post">
       <label for="namefield">Ваше имя:</label>
-      <input type="text" id="namefield" name="name" value="Имя Фамилия">
+      <input type="text" id="namefield" name="name" placeholder="Имя Фамилия" required>
       <label for="emailfield">Ваш e-mail:</label>
-      <input type="text" id="emailfield" name="email" value="email@example.com">
+      <input type="text" id="emailfield" name="email" placeholder="email@example.com" required>
       <label for="letterfield">Текст письма:</label>
-      <textarea id="letterfield" name="message" rows="6" cols="50">В свободной форме</textarea>
+      <textarea id="letterfield" name="message" rows="6" cols="50" placeholder="В свободной форме"></textarea>
       <div>
         <button type="submit">Отправить</button>
       </div>
