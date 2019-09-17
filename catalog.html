@@ -9,7 +9,9 @@
       <section>
       <div>
         <a href="index.html"><img src="img/icons/logo-technomart.svg" width="110" height="18" alt="Логотип Техномарт"></a>
-        <button type="button">Поиск</button><!--тут будет форма-->
+        <form action="#" method="get">
+          <input type="search" value="Поиск">
+        </form>
         <ul>
           <li><a href="#">Закладки:0</a></li>
           <li><a href="#">Корзина:10</a></li>
@@ -26,7 +28,7 @@
           г. Санкт-Петербург, ул. Б. Конюишенная, д. 19/8
         </p>
         <p>
-            <a href="#">Равшан Джамшутович</a>
+          <a href="#">Равшан Джамшутович</a>
         </p>
         <ul>
           <li><a href="#">Мои заказы</a></li>
@@ -54,22 +56,48 @@
         </ul>
         <h1>Перфораторы</h1>
         <aside>
-          <h2>Фильтр:</h2>
-          <!--тут будет фильтр-->
-          <h3>Производители:</h3>
-          <ul>
-            <li>Bosch</li>
-            <li>Интерскол</li>
-            <li>Makita</li>
-            <li>Dewalt</li>
-            <li>Hitachi</li>
-          </ul>
-          <h3>Питание:</h3>
-          <ul>
-            <li>Аккумуляторные</li>
-            <li>Сетевые</li>
-          </ul>
-          <button type="button">Показать</button>
+          <form action="#" method="get" oninput="maxpriceoutput.value=maxprice.value">
+            <div>
+              <h2>Фильтр:</h2>
+              <label for="price">Цена:
+                <input type="range" id="price" name="maxprice" min="0" max="40000" step="500" value="30000">
+              </label>
+              <div>
+                <output name="minpriceoutput">0</output>
+                &ndash;
+                <output name="maxpriceoutput">30000</output>
+              </div>
+            </div>
+            <div>
+              <h3>Производители:</h3>
+          
+              <input type="checkbox" name="brand" id="bosch" value="Bosch" checked>
+              <label for="bosch">Bosch</label>
+
+              <input type="checkbox" name="brand" id="interskol" value="Interskol">
+              <label for="interskol">Интерскол</label>
+
+              <input type="checkbox" name="brand" id="makita" value="Makita" checked>
+              <label for="makita">Makita</label>
+
+              <input type="checkbox" name="brand" id="dewalt" value="Dewalt">
+              <label for="dewalt">Dewalt</label>
+
+              <input type="checkbox" name="brand" id="hitachi" value="Hitachi">
+              <label for="hitachi">Hitachi</label>
+            </div>
+            <div>
+              <h3>Питание:</h3>
+              <input type="radio" name="power" id="battery" value="Battery" checked>
+              <label for="battery">Аккумуляторные</label>
+
+              <input type="radio" name="power" id="network" value="Network">
+              <label for="network">Сетевые</label>
+              <div>
+                <button type="button">Показать</button>
+              </div>
+            </div>
+          </form>
         </aside>
         <div>
           <p>Сортировка</p>
@@ -82,7 +110,7 @@
           <span>Снизу</span><!--Стрелочки-->
         </div>
         <div>
-          <h3>Результаты поиска:</h3>
+          <h3 class="visually-hidden">Результаты поиска:</h3>
           <ul>
             <li>
               <h3>
@@ -251,7 +279,7 @@
     </main>
     <footer>
       <section>
-        <h3>Навигация и полезные ссылки интернет-магазина Техномарт</h3>
+        <h3 class="visually-hidden">Навигация и полезные ссылки интернет-магазина Техномарт</h3>
         <a href="index.html"><img src="img/icons/logo-technomart.svg" width="110" height="18" alt="Логотип Техномарт"></a>
         <p>
           г. Санкт-Петербург, ул. Б. Конюишенная, д. 19/8
@@ -291,5 +319,15 @@
           </p>
         </section>
       </footer>
+      <div>
+        <p>
+          Товар добавлен в корзину!
+        </p>
+        <div>
+          <button type="submit">Оформить заказ</button>
+          <button type="button">Продолжить покупки</button>
+          <button type="button">Крестик</button>
+        </div>
+      </div>
     </body>
   </html>

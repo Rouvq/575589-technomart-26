@@ -9,7 +9,9 @@
       <section>
         <div>
         <a href="#"><img src="img/icons/logo-technomart.svg" width="110" height="18" alt="Логотип Техномарт"></a><!--Не понял как снять размеры у лого-->
-        <button type="button">Поиск</button><!--тут будет форма-->
+        <form action="#" method="get">
+          <input type="search" value="Поиск">
+        </form>
         <ul>
           <li><a href="#">Закладки:0</a></li>
           <li><a href="#">Корзина:0</a></li>
@@ -44,7 +46,7 @@
     </section>
     </header>
     <main>
-      <h1>Интернет-магазин Техномарт</h1>
+      <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
       <section>
         <div>
           <div>
@@ -93,7 +95,7 @@
           </div>
         </div>
         <div>
-        <h2>Популярные товары:</h2>
+        <h2 class="visually-hidden">Популярные товары:</h2>
         <p>
           <a href="#">Все популярные товары</a>
         </p>
@@ -151,7 +153,7 @@
           </li>
         </ul>
         <div>
-        <h2>Популярные производители:</h2>
+        <h2 class="visually-hidden">Популярные производители:</h2>
         <p><a href="#">Все производители</a></p>
         </div>
         <ul>
@@ -232,7 +234,7 @@
     </main>
     <footer>
       <section>
-        <h2>Навигация и полезные ссылки интернет-магазина Техномарт</h2>
+        <h2 class="visually-hidden">Навигация и полезные ссылки интернет-магазина Техномарт</h2>
         <a href="index.html"><img src="img/icons/logo-technomart.svg" width="110" height="18" alt="Лого Техномарт"></a>
         <p>
           г. Санкт-Петербург, ул. Б. Конюишенная, д. 19/8
@@ -275,7 +277,20 @@
     <div>
       <h2>Всплывающие окна</h2>
       <img src="img/map-big.jpg" width="940" height="446" alt="Большая карта">
+      <button type="button">Крестик</button>
     </div>
+    <form action="" method="post">
+      <label for="namefield">Ваше имя:</label>
+      <input type="text" id="namefield" name="name" value="Имя Фамилия">
+      <label for="emailfield">Ваш e-mail:</label>
+      <input type="text" id="emailfield" name="email" value="email@example.com">
+      <label for="letterfield">Текст письма:</label>
+      <textarea id="letterfield" name="message" rows="6" cols="50">В свободной форме</textarea>
+      <div>
+        <button type="submit">Отправить</button>
+      </div>
+      <button type="button">Крестик</button>
+    </form>
   </body>
 </html>
 
