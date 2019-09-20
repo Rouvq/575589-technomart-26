@@ -50,7 +50,7 @@
     <main>
       <section>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li>Перфораторы</li>
         </ul>
@@ -60,42 +60,44 @@
             <div>
               <h2>Фильтр:</h2>
               <p>Цена:</p>
-              <div>Полоска</div>
               <div>
+                <div arial-label="Полоска"></div>
                 <button type="button"></button>
                 <button type="button"></button>
               </div>
               <div>
-                <input type="text" name="min-price" value="0">
-                <input type="text" name="max-price" value="30000">
+                <input type="text" name="min-price" value="0" arial-label="Нижний порог цены">
+                <input type="text" name="max-price" value="30000" arial-label="Верхний порог цены">
               </div>
             </div>
             <div>
               <h3>Производители:</h3>
-          
-              <input type="checkbox" name="bosch" id="bosch" checked>
-              <label for="bosch">Bosch</label>
+              <ul>
+                <li><input type="checkbox" name="bosch" id="bosch" checked>
+                <label for="bosch">Bosch</label></li>
 
-              <input type="checkbox" name="interskol" id="interskol">
-              <label for="interskol">Интерскол</label>
+                <li><input type="checkbox" name="interskol" id="interskol">
+                <label for="interskol">Интерскол</label></li>
 
-              <input type="checkbox" name="makita" id="makita" checked>
-              <label for="makita">Makita</label>
+                <li><input type="checkbox" name="makita" id="makita" checked>
+                <label for="makita">Makita</label></li>
 
-              <input type="checkbox" name="dewalt" id="dewalt">
-              <label for="dewalt">Dewalt</label>
+                <li><input type="checkbox" name="dewalt" id="dewalt">
+                <label for="dewalt">Dewalt</label></li>
 
-              <input type="checkbox" name="hitachi" id="hitachi">
-              <label for="hitachi">Hitachi</label>
+                <li><input type="checkbox" name="hitachi" id="hitachi">
+                <label for="hitachi">Hitachi</label></li>
+              </ul>
             </div>
             <div>
               <h3>Питание:</h3>
+              <ul>
+                <li><input type="radio" name="power" id="battery" checked>
+                <label for="battery">Аккумуляторные</label></li>
 
-              <input type="radio" name="battery" id="battery" checked>
-              <label for="battery">Аккумуляторные</label>
-
-              <input type="radio" name="network" id="network">
-              <label for="network">Сетевые</label>
+                <li><input type="radio" name="power" id="network">
+                <label for="network">Сетевые</label></li>
+              </ul>
 
               <button type="button">Показать</button>
             </div>
@@ -108,8 +110,8 @@
             <li><a href="#">по типу</a></li>
             <li><a href="#">по функционалу</a></li>
             </ul>
-          <span>Сверху</span><!--Стрелочки-->
-          <span>Снизу</span><!--Стрелочки-->
+          <button type="button" arial-label="По возрастанию">Сверху</button><!--Стрелочки-->
+          <button type="button" arial-label="По убыванию">Снизу</button><!--Стрелочки-->
         </div>
         <div>
           <h3 class="visually-hidden">Результаты поиска:</h3>
@@ -257,8 +259,8 @@
                 <ins>12500 Р.</ins>
               </p>
               <ul>
-                <li><button type="button">Купить</button></li>
-                <li><button type="button">В закладки</button></li>
+                <li><a href="#">Купить</a></li>
+                <li><a href="#">В закладки</a></li>
               </ul>
             </li>                   
           </ul>
@@ -307,9 +309,9 @@
             Все права защищены
           </p>
           <ul>
-            <li><a href="#">Вконтакте</a></li>
-            <li><a href="#">Фейсбук</a></li>
-            <li><a href="#">Инстаграм</a></li>
+            <li><a href="#" arial-label="Техномарт во Вконтакте">Вконтакте</a></li>
+            <li><a href="#" arial-label="Техномарт на Фейсбуке">Фейсбук</a></li>
+            <li><a href="#" arial-label="Техномарт в Инстраграм">Инстаграм</a></li>
           </ul>
           <p>
             Обратная связь:
@@ -328,7 +330,7 @@
         <div>
           <a href="#">Оформить заказ</a>
           <button type="button">Продолжить покупки</button>
-          <button type="button" arial-label="закрыть окно регистрации">Крестик</button>
+          <button type="button" arial-label="закрыть окно регистрации"></button>
         </div>
       </div>
     </body>
